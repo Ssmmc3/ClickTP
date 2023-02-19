@@ -1,0 +1,7 @@
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+print("Script Launched Successfully.")
+mouse.Button1Down:Connect(function()
+	print(mouse.hit)
+	player.Character.HumanoidRootPart.CFrame = mouse.Hit
+end)
